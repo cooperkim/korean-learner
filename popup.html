@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Korean Launcher</title>
+        <style>
+            body {
+                height: 400px;
+                width: 400px;
+                background-color: bisque;
+            }
+
+            button {
+                background-color: black;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                font-size: 16px;
+                margin-top: 5px;
+                width: 80%;
+            }
+
+            #submit {
+                background-color: orange;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                font-size: 16px;  
+            }
+
+            .submit {
+                min-height: 300px;
+            }
+
+            .matchWord {
+                font-size: 16px;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+         <div class="matchWord">
+            <h1>Match the word</h1>
+            <h3 id="getWord"></h3>
+         </div>
+         <div class="matchPronounce" style="display:block;">
+            <h3>Choices</h3>
+            <ul>
+                <button id="choice1"></button>
+                <button id="choice2"></button>
+                <button id="choice3"></button>
+                <button id="choice4"></button>
+            </ul>
+        </div>
+        <div class="submit">
+            <button id="submit">submit</button>
+            <h3 id="test"></h3>
+            <button id="continue" style="display: none">continue</button>
+            <script type="text/javascript" src="popup.js"></script>
+        </div>
+    </body>
+</html>
